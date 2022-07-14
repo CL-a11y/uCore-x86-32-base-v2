@@ -1,7 +1,7 @@
 git clone https://github.com/CL-a11y/uCore-x86-32-config config
-cd config && git checkout lab1 && cd ..
+cd config && git checkout lab2 && cd ..
 mkdir .github
 cp -r config/classroom .github/
 cp -r config/workflows .github/
 cp  config/Makefile ./
-cp  config/lab1.sh ./
+cp  config/lab2.sh ./
