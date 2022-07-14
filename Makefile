@@ -18,49 +18,6 @@ gcc:
 
 
 lab1:
-	sed -i 's/lab/lab1/g' .github/classroom/autograding.json
-	cd lab1 && make qemu CC=gcc-4.8 > .qemu.out
-	cat ./lab1/.qemu.out
-	cd lab1 && make grade CC=gcc-4.8
-
-lab2:
-	sed -i 's/lab/lab2/g' .github/classroom/autograding.json
-	cd lab2 && make qemu CC=gcc-4.8 > .qemu.out
-	cat ./lab2/.qemu.out
-	cd lab2 && make grade CC=gcc-4.8
-
-lab3:
-	sed -i 's/lab/lab3/g' .github/classroom/autograding.json
-	cd lab3 && make qemu CC=gcc-4.8 > .qemu.out
-	cat ./lab3/.qemu.out
-	cd lab3 && make grade CC=gcc-4.8
-
-lab4:
-	sed -i 's/lab/lab4/g' .github/classroom/autograding.json
-	cd lab4 && make qemu CC=gcc-4.8 > .qemu.out
-	cat ./lab4/.qemu.out
-	cd lab4 && make grade CC=gcc-4.8
-
-lab5:
-	sed -i 's/lab/lab5/g' .github/classroom/autograding.json
-	cd lab5 && make qemu CC=gcc-4.8 > .qemu.out
-	cat ./lab5/.qemu.out
-	cd lab5 && make grade CC=gcc-4.8
-
-lab6:
-	sed -i 's/lab/lab6/g' .github/classroom/autograding.json
-	cd lab6 && make qemu CC=gcc-4.8 > .qemu.out
-	cat ./lab6/.qemu.out
-	cd lab6 && make grade CC=gcc-4.8
-
-lab7:
-	sed -i 's/lab/lab7/g' .github/classroom/autograding.json
-	cd lab7 && make qemu CC=gcc-4.8 > .qemu.out
-	cat ./lab7/.qemu.out
-	cd lab7 && make grade CC=gcc-4.8
-
-lab8:
-	sed -i 's/lab/lab8/g' .github/classroom/autograding.json
-	cd lab8 && make qemu CC=gcc-4.8 > .qemu.out
-	cat ./lab8/.qemu.out
-	cd lab8 && make grade CC=gcc-4.8
+	git clone https://github.com/CL-a11y/uCore-x86-32-config config
+	cd config && git checkout lab1
+	cp config/* .
