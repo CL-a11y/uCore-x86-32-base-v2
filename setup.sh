@@ -4,4 +4,4 @@ mkdir .github
 cp -r config/classroom .github/
 cp -r config/workflows .github/
 cp  config/Makefile ./
-cp  config/lab2.sh ./
+cp  config/test.sh ./
