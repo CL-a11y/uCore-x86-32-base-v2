@@ -5,3 +5,4 @@ cp -r config/classroom .github/
 cp -r config/workflows .github/
 cp  config/Makefile ./
 cp  config/test.sh ./
+make setupenv
